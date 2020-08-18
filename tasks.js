@@ -1,10 +1,11 @@
 
-
-const buttonSelect = document.querySelector("[data-form-button]");
-
-buttonSelect.addEventListener("click", function(event){
+const getItem = function(event){
     event.preventDefault();
     var inputSelect = document.querySelector("[data-form-input]");
     var getValue = inputSelect.value
-    console.log("Valor informado pelo Usuario: ", getValue);
-})
+    console.log("Valor informado pelo Usuario: ", getValue);   
+}
+
+const buttonSelect = document.querySelector("[data-form-button]");
+
+buttonSelect.addEventListener("click", getItem);
